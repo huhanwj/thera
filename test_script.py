@@ -34,7 +34,7 @@ from huggingface_hub import hf_hub_download # For downloading the model
 # --- Configuration ---
 
 # Input Directory containing low-resolution images (e.g., 144p)
-INPUT_DIR = 'images/144p' # <--- CHANGE THIS if needed
+INPUT_DIR = 'images/360p' # <--- CHANGE THIS if needed
 
 # Base Output Directory for results
 BASE_OUTPUT_DIR = 'results' # <--- CHANGE THIS if needed
@@ -43,7 +43,7 @@ BASE_OUTPUT_DIR = 'results' # <--- CHANGE THIS if needed
 GROUND_TRUTH_BASE_DIR: str | None = None # Set to None
 
 # Super-Resolution Target Scales to test
-SCALING_FACTORS = [1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5] # <--- ADJUST AS NEEDED
+SCALING_FACTORS = [1.5, 2.0, 2.5, 3.0] # <--- ADJUST AS NEEDED
 
 # List of Hugging Face Model Repository IDs to test
 MODEL_REPOS = [
